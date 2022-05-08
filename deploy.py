@@ -51,7 +51,7 @@ w3 = Web3(Web3.HTTPProvider(""))
 # w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 chain_id = 4
 
-my_address = "0xAfc285c75395D7fba5E20E04CCa96bee8bE02373"
+my_address = ""
 private_key = os.getenv("PRIVATE_KEY")
 
 # create the contract in python
