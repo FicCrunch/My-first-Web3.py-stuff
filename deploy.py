@@ -15,7 +15,7 @@ from web3 import Web3
 import os
 from dotenv import load_dotenv
 # from web3.middleware import geth_poa_middleware
-# https://www.facebook.com/permalink.php?story_fbid=517268223332779&id=100051488166017
+
 
 load_dotenv()
 
@@ -47,7 +47,7 @@ bytecode = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["evm"
 abi = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["abi"]
 
 # for connecting to rinkeby
-w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/0560f381fc044ecfa64caf9dee7a7da2"))
+w3 = Web3(Web3.HTTPProvider(""))
 # w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 chain_id = 4
 
